@@ -46,7 +46,7 @@ int server_handshake(int *to_client) {
 
   close(w_k_p);
   
-  buffer = realloc(buffer,8);
+  free(buffer);
   
   from_client = spcwkp;
   
